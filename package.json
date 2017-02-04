@@ -1,0 +1,36 @@
+{
+  "name": "fivelabs-vue-env",
+  "version": "1.2.8",
+  "description": "Vue.js simple environment management.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "webpack --config example/webpack.config.js -w -d",
+    "build": "babel src -d dist",
+    "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fivelabs/vue-env.git"
+  },
+  "keywords": [
+    "vue",
+    "env",
+    "environment",
+    "plugin",
+    "fivelabs"
+  ],
+  "author": "Five Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fivelabs/vue-env/issues"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "jasmine": "^2.5.2",
+    "webpack": "^2.2.1"
+  }
+}
